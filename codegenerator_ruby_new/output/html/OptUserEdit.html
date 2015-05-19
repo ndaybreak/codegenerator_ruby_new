@@ -1,0 +1,88 @@
+<div>
+
+	<div class="modal-header modal-header-extd">
+		<h3>User</h3> 
+	</div>
+
+	<div class="modal-body">
+		<form class="form-horizontal" role="form">
+			<table>
+				<tr class="form-group">
+					<td style="vertical-align: top;">
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label popup_table_lable pa-edit-mandatory-label"> Tenant Code</label>
+					</td>
+					<td style="vertical-align: top;">
+						<div class="col-lg-7">
+							<select class="form-control" id="elTenantCode" ng-model="formItem.tenantCode" ng-options="c.valueForDisplay for c in tenantCodes" ng-change="clearError()" pa-combobox></select>
+						</div>
+					</td>
+				</tr>
+				<tr style="height: 15px;"></tr>
+				<tr class="form-group">
+					<td style="vertical-align: top;">
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label popup_table_lable pa-edit-mandatory-label"> Email</label>
+					</td>
+					<td style="vertical-align: top;">
+						<div class="col-lg-7">
+							<input class="form-control add_form_text_input" type="text" ng-model="item.email" ng-change="elEmailCheck()" ng-blur="elEmailCheck('blur')" ng-focus="elEmailFocus()" />
+						</div>
+					</td>
+				</tr>
+				<tr style="height: 15px;"></tr>
+				<tr class="form-group">
+					<td style="vertical-align: top;">
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label popup_table_lable pa-edit-mandatory-label"> First Name</label>
+					</td>
+					<td style="vertical-align: top;">
+						<div class="col-lg-7">
+							<input class="form-control add_form_text_input" type="text" ng-model="item.firstName" ng-change="elFirstNameCheck()" ng-blur="elFirstNameCheck('blur')" ng-focus="elFirstNameFocus()" />
+						</div>
+					</td>
+				</tr>
+				<tr style="height: 15px;"></tr>
+				<tr class="form-group">
+					<td style="vertical-align: top;">
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label popup_table_lable pa-edit-mandatory-label"> Last Name</label>
+					</td>
+					<td style="vertical-align: top;">
+						<div class="col-lg-7">
+							<input class="form-control add_form_text_input" type="text" ng-model="item.lastName" ng-change="elLastNameCheck()" ng-blur="elLastNameCheck('blur')" ng-focus="elLastNameFocus()" />
+						</div>
+					</td>
+				</tr>
+				<tr style="height: 15px;"></tr>
+				<tr class="form-group">
+					<td style="vertical-align: top;">
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label popup_table_lable pa-edit-mandatory-label"> Role</label>
+					</td>
+					<td style="vertical-align: top;">
+						<div class="col-lg-7">
+							<select class="form-control" id="elRole" ng-model="formItem.role" ng-options="c.valueForDisplay for c in roles" ng-change="clearError()" pa-combobox></select>
+						</div>
+					</td>
+				</tr>
+				<tr style="height: 15px;"></tr>
+				<tr class="form-group">
+					<td style="vertical-align: top;">
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label popup_table_lable" for="elStatusFlag"> Active</label>
+					</td>
+					<td style="vertical-align: top;">
+						<div class="col-lg-7">
+							<label for="elStatusFlag" class="cb-label"><span></span></label>
+							<input class="cstmeinput" type="checkbox" id="elStatusFlag" name="statusFlag" ng-model="formItem.statusFlag" pa-checkbox />
+						</div>
+					</td>
+				</tr>
+				<tr style="height: 15px;"></tr>
+			</table>
+		</form>
+	</div>
+
+	<div class="modal-custom-footer">
+		<a class="btn btn-Primary btn-add" ng-click="save()"><i class="icon-save"></i>Save</a>
+		<a class="btn btn-Secondary btn-cancel" ng-click="cancel()" style="border-top-right-radius: 5px; border-bottom-left-radius: 5px;"> <i class="icon-ban-circle"></i>Cancel</a>
+	</div>
+
+	<div class="alert error" ng-show="hasError">{{errorMessage}}</div>
+
+</div>

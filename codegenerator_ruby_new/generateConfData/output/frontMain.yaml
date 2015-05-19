@@ -1,0 +1,881 @@
+--- !ruby/object:XGrid
+two_columns: false
+show_scroll: false
+entity_name: OptBuCustExcp
+entity_title: BU-Customer Exception
+doller_fields: []
+percent_fields: []
+input_date_fields:
+- mdcpOrgId
+- amid2
+- lastModTs
+action: optBuCustExcp
+colms_info:
+- - ''
+  - ''
+  - ''
+  - true
+  - ''
+- - Region
+  - rgnCdForDisplay
+  - rgnCd
+  - true
+  - pg-col-min-width
+- - Sub Region 1
+  - subregn1CdForDisplay
+  - subregn1Cd
+  - true
+  - pg-col-width
+- - Sub Region 2
+  - subregn2CdForDisplay
+  - subregn2Cd
+  - true
+  - pg-col-width
+- - Sub Region 3
+  - subregn3CdForDisplay
+  - subregn3Cd
+  - true
+  - pg-col-width
+- - Country
+  - cntryCdForDisplay
+  - cntryCd
+  - true
+  - pg-col-width
+- - Business Unit
+  - busUnitForDisplay
+  - busUnit
+  - true
+  - pg-col-width
+- - MDCP Org ID
+  - mdcpOrgId
+  - mdcpOrgId
+  - true
+  - pg-col-width
+- - AMID2
+  - amid2
+  - amid2
+  - true
+  - pg-col-width
+- - Note
+  - note
+  - note
+  - true
+  - pg-col-width
+- - Updated By
+  - lastModByEmail
+  - lastModById
+  - true
+  - pg-col-min-width
+- - Updated On
+  - lastModTs
+  - lastModTs
+  - true
+  - pg-col-min-width
+bigint_colms:
+- lastModById
+--- !ruby/object:XGrid
+two_columns: false
+show_scroll: false
+entity_name: OptCntryExcp
+entity_title: Country Exception
+doller_fields: []
+percent_fields: []
+input_date_fields:
+- lastModTs
+action: optCntryExcp
+colms_info:
+- - ''
+  - ''
+  - ''
+  - true
+  - ''
+- - Region
+  - rgnCdForDisplay
+  - rgnCd
+  - true
+  - pg-col-width
+- - Sub Region 1
+  - subregn1CdForDisplay
+  - subregn1Cd
+  - true
+  - pg-col-width
+- - Sub Region 2
+  - subregn2CdForDisplay
+  - subregn2Cd
+  - true
+  - pg-col-width
+- - Sub Region 3
+  - subregn3CdForDisplay
+  - subregn3Cd
+  - true
+  - pg-col-width
+- - Country
+  - cntryCdForDisplay
+  - cntryCd
+  - true
+  - pg-col-width
+- - Note
+  - note
+  - note
+  - true
+  - pg-col-width
+- - Updated By
+  - lastModByEmail
+  - lastModById
+  - true
+  - pg-col-width
+- - Updated On
+  - lastModTs
+  - lastModTs
+  - true
+  - pg-col-width
+bigint_colms:
+- lastModById
+--- !ruby/object:XGrid
+two_columns: false
+show_scroll: false
+entity_name: OptCurrExcp
+entity_title: Currency Exception
+doller_fields: []
+percent_fields: []
+input_date_fields:
+- lastModTs
+action: optCurrExcp
+colms_info:
+- - ''
+  - ''
+  - ''
+  - true
+  - ''
+- - Region
+  - rgnCdForDisplay
+  - rgnCd
+  - true
+  - pg-col-width
+- - Sub Region 1
+  - subregn1CdForDisplay
+  - subregn1Cd
+  - true
+  - pg-col-width
+- - Sub Region 2
+  - subregn2CdForDisplay
+  - subregn2Cd
+  - true
+  - pg-col-width
+- - Sub Region 3
+  - subregn3CdForDisplay
+  - subregn3Cd
+  - true
+  - pg-col-width
+- - Country
+  - cntryCdForDisplay
+  - cntryCd
+  - true
+  - pg-col-width
+- - Currency
+  - currCd
+  - currCd
+  - true
+  - pg-col-width
+- - Note
+  - note
+  - note
+  - true
+  - pg-col-width
+- - Updated By
+  - lastModByEmail
+  - lastModById
+  - true
+  - pg-col-width
+- - Updated On
+  - lastModTs
+  - lastModTs
+  - true
+  - pg-col-width
+bigint_colms:
+- lastModById
+--- !ruby/object:XGrid
+two_columns: false
+show_scroll: false
+entity_name: OptCustExcp
+entity_title: Customer Exception
+doller_fields: []
+percent_fields: []
+input_date_fields:
+- amid2
+- mdcpOrgId
+- mdcpSiteId
+- lastModTs
+action: optCustExcp
+colms_info:
+- - ''
+  - ''
+  - ''
+  - true
+  - ''
+- - Region
+  - rgnCdForDisplay
+  - rgnCd
+  - true
+  - pg-col-width
+- - Sub Region 1
+  - subregn1CdForDisplay
+  - subregn1Cd
+  - true
+  - pg-col-width
+- - Sub Region 2
+  - subregn2CdForDisplay
+  - subregn2Cd
+  - true
+  - pg-col-width
+- - Sub Region 3
+  - subregn3CdForDisplay
+  - subregn3Cd
+  - true
+  - pg-col-width
+- - Country
+  - cntryCdForDisplay
+  - cntryCd
+  - true
+  - pg-col-width
+- - AMID2
+  - amid2ForDisplay
+  - amid2
+  - true
+  - pg-col-width
+- - MDCP Org ID
+  - mdcpOrgId
+  - mdcpOrgId
+  - true
+  - pg-col-width
+- - MDCP Site ID
+  - mdcpSiteId
+  - mdcpSiteId
+  - true
+  - pg-col-width
+- - Note
+  - note
+  - note
+  - true
+  - pg-col-width
+- - Updated By
+  - lastModByEmail
+  - lastModById
+  - true
+  - pg-col-width
+- - Updated On
+  - lastModTs
+  - lastModTs
+  - true
+  - pg-col-width
+bigint_colms:
+- lastModById
+--- !ruby/object:XGrid
+two_columns: false
+show_scroll: false
+entity_name: OptCustSegExcp
+entity_title: Customer Segment Exception
+doller_fields: []
+percent_fields: []
+input_date_fields:
+- lastModTs
+action: optCustSegExcp
+colms_info:
+- - ''
+  - ''
+  - ''
+  - true
+  - ''
+- - Region
+  - rgnCdForDisplay
+  - rgnCd
+  - true
+  - pg-col-width
+- - Sub Region 1
+  - subregn1CdForDisplay
+  - subregn1Cd
+  - true
+  - pg-col-width
+- - Sub Region 2
+  - subregn2CdForDisplay
+  - subregn2Cd
+  - true
+  - pg-col-width
+- - Sub Region 3
+  - subregn3CdForDisplay
+  - subregn3Cd
+  - true
+  - pg-col-width
+- - Country
+  - cntryCdForDisplay
+  - cntryCd
+  - true
+  - pg-col-width
+- - Customer Segment
+  - custSegForDisplay
+  - custSeg
+  - true
+  - pg-col-width
+- - Note
+  - note
+  - note
+  - true
+  - pg-col-width
+- - Updated By
+  - lastModByEmail
+  - lastModById
+  - true
+  - pg-col-width
+- - Updated On
+  - lastModTs
+  - lastModTs
+  - true
+  - pg-col-width
+bigint_colms:
+- lastModById
+--- !ruby/object:XGrid
+two_columns: true
+show_scroll: true
+entity_name: OptGuidanceDefaultPt
+entity_title: Guidance Default Points
+doller_fields: []
+percent_fields:
+- authAdjPct
+- defAdjPct
+input_date_fields:
+- lastModTs
+action: optGuidanceDefaultPt
+colms_info:
+- - ''
+  - ''
+  - ''
+  - true
+  - ''
+- - Route to Market
+  - routeToMarket
+  - routeToMarket
+  - true
+  - pg-col-min-width
+- - Region
+  - rgnCdForDisplay
+  - region
+  - true
+  - pg-col-width
+- - Sub Region 1
+  - subregn1CdForDisplay
+  - subregn1Cd
+  - false
+  - pg-col-width
+- - Sub Region 2
+  - subregn2CdForDisplay
+  - subregn2Cd
+  - false
+  - pg-col-width
+- - Sub Region 3
+  - subregn3CdForDisplay
+  - subregn3Cd
+  - false
+  - pg-col-width
+- - Country
+  - cntryCdForDisplay
+  - cntryCd
+  - true
+  - pg-col-width
+- - Business Unit
+  - busUnitForDisplay
+  - busUnit
+  - true
+  - pg-col-width
+- - Role
+  - roleForDisplay
+  - roleId
+  - true
+  - pg-col-width
+- - Negative Margin Approval Flag
+  - negMarginAprvlFgForDisplay
+  - negMarginAprvlFg
+  - true
+  - pg-col-width
+- - Default Benchmark
+  - defBenchForDisplay
+  - defBench
+  - true
+  - pg-col-min-width
+- - Default Adjustment %
+  - defAdjPct
+  - defAdjPct
+  - true
+  - pg-col-min-width
+- - Auth Benchmark
+  - authBenchForDisplay
+  - authBench
+  - true
+  - pg-col-min-width
+- - Auth Adjustment %
+  - authAdjPct
+  - authAdjPct
+  - true
+  - pg-col-min-width
+- - Show Expert
+  - showExpFg
+  - showExpFg
+  - true
+  - pg-col-min-width
+- - Show Typical
+  - showTypFg
+  - showTypFg
+  - true
+  - pg-col-min-width
+- - Show Floor
+  - showFlrFg
+  - showFlrFg
+  - true
+  - pg-col-min-width
+- - Active
+  - activeFg
+  - activeFg
+  - true
+  - pg-col-min-width
+- - Note
+  - note
+  - note
+  - true
+  - pg-col-width
+- - Updated By
+  - lastModByEmail
+  - lastModById
+  - true
+  - pg-col-width
+- - Updated On
+  - lastModTs
+  - lastModTs
+  - true
+  - pg-col-width
+bigint_colms:
+- lastModById
+--- !ruby/object:XGrid
+two_columns: false
+show_scroll: false
+entity_name: OptNonDiscProdExcp
+entity_title: Non-discountable Product Exception
+doller_fields: []
+percent_fields: []
+input_date_fields:
+- baseProd
+- lastModTs
+action: optNonDiscProdExcp
+colms_info:
+- - ''
+  - ''
+  - ''
+  - true
+  - ''
+- - Region
+  - rgnCdForDisplay
+  - rgnCd
+  - true
+  - pg-col-width
+- - Sub Region 1
+  - subregn1CdForDisplay
+  - subregn1Cd
+  - true
+  - pg-col-width
+- - Sub Region 2
+  - subregn2CdForDisplay
+  - subregn2Cd
+  - true
+  - pg-col-width
+- - Sub Region 3
+  - subregn3CdForDisplay
+  - subregn3Cd
+  - true
+  - pg-col-width
+- - Country
+  - cntryCdForDisplay
+  - cntryCd
+  - true
+  - pg-col-width
+- - Base Product
+  - baseProd
+  - baseProd
+  - true
+  - pg-col-width
+- - Note
+  - note
+  - note
+  - true
+  - pg-col-width
+- - Updated By
+  - lastModByEmail
+  - lastModById
+  - true
+  - pg-col-width
+- - Updated On
+  - lastModTs
+  - lastModTs
+  - true
+  - pg-col-width
+bigint_colms:
+- lastModById
+--- !ruby/object:XGrid
+two_columns: false
+show_scroll: false
+entity_name: OptProdExcp
+entity_title: Product Exception
+doller_fields: []
+percent_fields: []
+input_date_fields:
+- baseProd
+- lastModTs
+action: optProdExcp
+colms_info:
+- - ''
+  - ''
+  - ''
+  - true
+  - ''
+- - Region
+  - rgnCdForDisplay
+  - rgnCd
+  - true
+  - pg-col-min-width
+- - Sub Region 1
+  - subregn1CdForDisplay
+  - subregn1Cd
+  - true
+  - pg-col-width
+- - Sub Region 2
+  - subregn2CdForDisplay
+  - subregn2Cd
+  - true
+  - pg-col-width
+- - Sub Region 3
+  - subregn3CdForDisplay
+  - subregn3Cd
+  - true
+  - pg-col-width
+- - Country
+  - cntryCdForDisplay
+  - cntryCd
+  - true
+  - pg-col-width
+- - Product Line
+  - prodLnIdForDisplay
+  - prodLnId
+  - true
+  - pg-col-width
+- - Product Family
+  - prodFmlyIdForDisplay
+  - prodFmlyId
+  - true
+  - pg-col-width
+- - Base Product
+  - baseProd
+  - baseProd
+  - true
+  - pg-col-width
+- - Note
+  - note
+  - note
+  - true
+  - pg-col-width
+- - Updated By
+  - lastModByEmail
+  - lastModById
+  - true
+  - pg-col-min-width
+- - Updated On
+  - lastModTs
+  - lastModTs
+  - true
+  - pg-col-min-width
+bigint_colms:
+- lastModById
+--- !ruby/object:XGrid
+two_columns: true
+show_scroll: true
+entity_name: OptThreshold
+entity_title: Price Method Threshold
+doller_fields:
+- t1
+- t2
+- t3
+- holdIntlPrc
+- ppsHoldIntlPrc
+percent_fields: []
+input_date_fields:
+- amid2
+- lastModTs
+action: optThreshold
+colms_info:
+- - ''
+  - ''
+  - ''
+  - true
+  - ''
+- - Region
+  - rgnCdForDisplay
+  - rgnCd
+  - true
+  - pg-col-min-width
+- - Sub Region 1
+  - subregn1CdForDisplay
+  - subregn1Cd
+  - true
+  - pg-col-width
+- - Sub Region 2
+  - subregn2CdForDisplay
+  - subregn2Cd
+  - true
+  - pg-col-width
+- - Sub Region 3
+  - subregn3CdForDisplay
+  - subregn3Cd
+  - true
+  - pg-col-width
+- - Country
+  - cntryCdForDisplay
+  - cntryCd
+  - true
+  - pg-col-width
+- - Business Unit
+  - busUnitForDisplay
+  - busUnit
+  - true
+  - pg-col-width
+- - AMID2
+  - amid2ForDisplay
+  - amid2
+  - true
+  - pg-col-width
+- - T1 ($)
+  - t1
+  - t1
+  - true
+  - pg-col-width
+- - T2 ($)
+  - t2
+  - t2
+  - true
+  - pg-col-width
+- - T3 ($)
+  - t3
+  - t3
+  - true
+  - pg-col-min-width
+- - Hold Initial Price ($)
+  - holdIntlPrc
+  - holdIntlPrc
+  - true
+  - pg-col-min-width
+- - PPS Hold Initial Price ($)
+  - ppsHoldIntlPrc
+  - ppsHoldIntlPrc
+  - false
+  - pg-col-min-width
+- - Unverified Customer Pricing Method
+  - unverCustPrcMthd
+  - unverCustPrcMthd
+  - true
+  - pg-col-min-width
+- - Note
+  - note
+  - note
+  - true
+  - pg-col-min-width
+- - Updated By
+  - lastModByEmail
+  - lastModById
+  - true
+  - pg-col-min-width
+- - Updated On
+  - lastModTs
+  - lastModTs
+  - true
+  - pg-col-min-width
+bigint_colms:
+- t1
+- t2
+- t3
+- holdIntlPrc
+- ppsHoldIntlPrc
+- lastModById
+--- !ruby/object:XGrid
+two_columns: false
+show_scroll: false
+entity_name: OptPromo
+entity_title: Promo pricing
+doller_fields: []
+percent_fields: []
+input_date_fields:
+- lastModTs
+action: optPromo
+colms_info:
+- - ''
+  - ''
+  - ''
+  - true
+  - ''
+- - Route to Market
+  - routeToMarket
+  - routeToMarket
+  - true
+  - pg-col-width
+- - Region
+  - rgnCdForDisplay
+  - region
+  - true
+  - pg-col-width
+- - Sub Region 1
+  - subregn1CdForDisplay
+  - subregn1Cd
+  - false
+  - pg-col-width
+- - Sub Region 2
+  - subregn2CdForDisplay
+  - subregn2Cd
+  - false
+  - pg-col-width
+- - Sub Region 3
+  - subregn3CdForDisplay
+  - subregn3Cd
+  - false
+  - pg-col-width
+- - Country
+  - cntryCdForDisplay
+  - cntryCd
+  - true
+  - pg-col-width
+- - Business Group
+  - busGrpForDisplay
+  - busGrpId
+  - true
+  - pg-col-width
+- - Business Model
+  - busModelForDisplay
+  - busModelCd
+  - true
+  - pg-col-width
+- - Note
+  - note
+  - note
+  - true
+  - pg-col-width
+- - Updated By
+  - lastModByEmail
+  - lastModById
+  - true
+  - pg-col-width
+- - Updated On
+  - lastModTs
+  - lastModTs
+  - true
+  - pg-col-width
+bigint_colms:
+- lastModById
+--- !ruby/object:XGrid
+two_columns: false
+show_scroll: false
+entity_name: OptSqCustExcp
+entity_title: PQB Customer Level Exclusion
+doller_fields: []
+percent_fields: []
+input_date_fields:
+- lastModTs
+action: optSqCustExcp
+colms_info:
+- - ''
+  - ''
+  - ''
+  - true
+  - ''
+- - Customer
+  - custId
+  - custId
+  - true
+  - pg-col-pqbcust-width
+- - Customer Type
+  - idType
+  - idType
+  - true
+  - pg-col-pqbcust-width
+- - Note
+  - note
+  - note
+  - true
+  - pg-col-pqbcust-width
+- - Updated By
+  - lastModByEmail
+  - lastModById
+  - true
+  - pg-col-pqbcust-width
+- - Updated On
+  - lastModTs
+  - lastModTs
+  - true
+  - pg-col-pqbcust-width
+bigint_colms:
+- lastModById
+--- !ruby/object:XGrid
+two_columns: false
+show_scroll: false
+entity_name: OptSqCtryBgExcp
+entity_title: PQB Country/BG Exclusion
+doller_fields: []
+percent_fields: []
+input_date_fields:
+- lastModTs
+action: optSqCtryBgExcp
+colms_info:
+- - ''
+  - ''
+  - ''
+  - true
+  - ''
+- - Region
+  - rgnCdForDisplay
+  - rgnCd
+  - true
+  - pg-col-width
+- - Sub Region 1
+  - subregn1CdForDisplay
+  - subregn1Cd
+  - false
+  - pg-col-width
+- - Sub Region 2
+  - subregn2CdForDisplay
+  - subregn2Cd
+  - false
+  - pg-col-width
+- - Sub Region 3
+  - subregn3CdForDisplay
+  - subregn3Cd
+  - false
+  - pg-col-width
+- - Country
+  - cntryCdForDisplay
+  - cntryCd
+  - true
+  - pg-col-width
+- - Business Group
+  - busGrp
+  - busGrp
+  - true
+  - pg-col-width
+- - Note
+  - note
+  - note
+  - true
+  - pg-col-width
+- - Updated By
+  - lastModByEmail
+  - lastModById
+  - true
+  - pg-col-width
+- - Updated On
+  - lastModTs
+  - lastModTs
+  - true
+  - pg-col-width
+bigint_colms:
+- lastModById

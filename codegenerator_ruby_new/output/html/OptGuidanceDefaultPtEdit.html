@@ -1,0 +1,167 @@
+<div>
+
+	<div class="modal-header modal-header-extd">
+		<h3>Guidance Default Points</h3> 
+	</div>
+
+	<div class="modal-body">
+		<form class="form-horizontal" role="form">
+			<table>
+				<tr>
+					<td>
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label twoCols-label"> Route to Market *</label>
+					</td>
+					<td>
+						<div>
+							<select class="form-control" id="elRouteToMarket" ng-model="formItem.routeToMarket" ng-options="c.valueForDisplay for c in routeToMarkets" ng-change="clearError()" pa-combobox></select>
+						</div>
+					</td>
+					<td>
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label twoCols-label pa-edit-mandatory-label"> Region </label>
+					</td>
+					<td>
+						<div>
+							<select class="form-control" id="elRegion" ng-model="formItem.region" ng-options="c.valueForDisplay for c in regions" ng-change="clearError()" pa-combobox></select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label twoCols-label"> Business Unit *</label>
+					</td>
+					<td>
+						<div>
+							<select class="form-control" id="elBusinessUnit" ng-model="formItem.businessUnit" ng-options="c.valueForDisplay for c in businessUnits" ng-change="clearError()" pa-combobox></select>
+						</div>
+					</td>
+					<td>
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label twoCols-label"> Country *</label>
+					</td>
+					<td>
+						<div>
+							<select class="form-control" id="elCountry" ng-model="formItem.country" ng-options="c.valueForDisplay for c in countries" ng-change="clearError()" pa-combobox></select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label twoCols-label pa-edit-mandatory-label"> Default Benchmark</label>
+					</td>
+					<td>
+						<div>
+							<select class="form-control" id="elBenchmark" ng-model="formItem.benchmark" ng-options="c.valueForDisplay for c in defBenchs" ng-change="clearError()" pa-combobox></select>
+						</div>
+					</td>
+					<td>
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label twoCols-label pa-edit-mandatory-label"> Role</label>
+					</td>
+					<td>
+						<div>
+							<select class="form-control" id="elRole" ng-model="formItem.role" ng-options="c.valueForDisplay for c in roles" ng-change="clearError()" pa-combobox></select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label twoCols-label pa-edit-mandatory-label"> Default Adjustment %</label>
+					</td>
+					<td>
+						<div>
+						
+							<input class="form-control add_form_text_input" type="text" ng-model="item.defAdjPct" ng-change="elDefAdjPctCheck()" ng-blur="elDefAdjPctCheck('blur')" ng-focus="elDefAdjPctFocus()" />
+						
+						</div>
+					</td>
+					<td>
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label twoCols-label pa-edit-mandatory-label"> Negative Margin Approval Flag</label>
+					</td>
+					<td>
+						<div>
+							<select class="form-control" id="elNegMarginAprvlFg" ng-model="formItem.negMarginAprvlFg" ng-options="c.valueForDisplay for c in negMarginAprvlFgs" ng-change="clearError()" pa-combobox></select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label twoCols-label pa-edit-mandatory-label"> Auth Benchmark</label>
+					</td>
+					<td>
+						<div>
+							<select class="form-control" id="elAuthBenchmark" ng-model="formItem.authBenchmark" ng-options="c.valueForDisplay for c in authBenchs" ng-change="clearError()" pa-combobox></select>
+						</div>
+					</td>
+					<td>
+						<label class="col-lg-3 control-label add_form_label twoCols-label" for="elShowExpFlag"> Show Expert</label>
+					</td>
+					<td>
+						<div style="padding-top:8px;">
+							<label for="elShowExpFlag" class="cb-label"><span></span></label>
+							<input class="cstmeinput" type="checkbox" id="elShowExpFlag" name="showExpFlag" ng-model="formItem.showExpFlag" pa-checkbox />
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label twoCols-label pa-edit-mandatory-label"> Auth Adjustment %</label>
+					</td>
+					<td>
+						<div>
+						
+							<input class="form-control add_form_text_input" type="text" ng-model="item.authAdjPct" ng-change="elAuthAdjPctCheck()" ng-blur="elAuthAdjPctCheck('blur')" ng-focus="elAuthAdjPctFocus()" />
+						
+						</div>
+					</td>
+					<td>
+						<label class="col-lg-3 control-label add_form_label twoCols-label" for="elShowTypeFlag"> Show Typical</label>
+					</td>
+					<td>
+						<div style="padding-top:8px;">
+							<label for="elShowTypeFlag" class="cb-label"><span></span></label>
+							<input class="cstmeinput" type="checkbox" id="elShowTypeFlag" name="showTypeFlag" ng-model="formItem.showTypeFlag" pa-checkbox />
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="col-lg-3 control-label add_form_label twoCols-label" for="elActiveFlag"> Active</label>
+					</td>
+					<td>
+						<div style="padding-top:8px;">
+							<label for="elActiveFlag" class="cb-label"><span></span></label>
+							<input class="cstmeinput" type="checkbox" id="elActiveFlag" name="activeFlag" ng-model="formItem.activeFlag" pa-checkbox />
+						</div>
+					</td>
+					<td>
+						<label class="col-lg-3 control-label add_form_label twoCols-label" for="elShowFlrFlag"> Show Floor</label>
+					</td>
+					<td>
+						<div style="padding-top:8px;">
+							<label for="elShowFlrFlag" class="cb-label"><span></span></label>
+							<input class="cstmeinput" type="checkbox" id="elShowFlrFlag" name="showFlrFlag" ng-model="formItem.showFlrFlag" pa-checkbox />
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="col-lg-3 control-label add_form_label pa-standalone-label twoCols-label"> Note</label>
+					</td>
+					<td colspan="3">
+						<div>
+						
+							<textarea class="ui-textarea" cols="20" rows="3" ng-model="item.note" ng-change="elNoteCheck()" ng-blur="elNoteCheck()" />
+						
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+	<div class="modal-custom-footer">
+		<a class="btn btn-Primary btn-add" ng-click="save()"><i class="icon-save"></i>Save</a>
+		<a class="btn btn-Secondary btn-cancel" ng-click="cancel()" style="border-top-right-radius: 5px; border-bottom-left-radius: 5px;"> <i class="icon-ban-circle"></i>Cancel</a>
+	</div>
+
+	<div class="alert error" ng-show="hasError">{{errorMessage}}</div>
+
+</div>
